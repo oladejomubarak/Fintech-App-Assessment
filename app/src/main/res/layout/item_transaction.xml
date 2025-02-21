@@ -34,7 +34,6 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp"/>
 
-            <!-- Destination Account -->
             <TextView
                 android:id="@+id/tvDestination"
                 android:layout_width="wrap_content"
@@ -43,8 +42,6 @@
                 android:textSize="14sp"
                 android:layout_marginBottom="4dp"/>
         </LinearLayout>
-
-        <!-- Center Column: Status -->
         <TextView
             android:id="@+id/tvStatus"
             android:layout_width="0dp"
@@ -62,8 +59,6 @@
             android:orientation="vertical"
             android:gravity="end"
             android:layout_weight="1">
-
-            <!-- Amount -->
             <TextView
                 android:id="@+id/tvAmount"
                 android:layout_width="wrap_content"
@@ -71,8 +66,6 @@
                 android:text="Amount"
                 android:textSize="14sp"
                 android:layout_marginBottom="4dp"/>
-
-            <!-- Timestamp -->
             <TextView
                 android:id="@+id/tvTimestamp"
                 android:layout_width="wrap_content"
