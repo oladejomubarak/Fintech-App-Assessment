@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Wrap the Toolbar inside an AppBarLayout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/transferToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue"
+            android:title="Transfer"
+            android:titleTextColor="@android:color/white"
+            app:titleCentered="true"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable container for the form content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp">
+
+        <!-- Main Content Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Optional Subtitle text -->
+            <TextView
+                android:id="@+id/tvTransferSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Transfer Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Source Account Spinner -->
+            <Spinner
+                android:id="@+id/spSourceAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:spinnerMode="dropdown" />
+
+            <!-- Destination Account Spinner -->
+            <Spinner
+                android:id="@+id/spDestinationAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:spinnerMode="dropdown" />
+
+            <!-- Transfer Amount -->
+            <EditText
+                android:id="@+id/etTransferAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Transfer Amount"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Review Button -->
+            <Button
+                android:id="@+id/btnReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Review Transfer"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/blue"
+                android:paddingVertical="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

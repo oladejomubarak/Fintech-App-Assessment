@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "980057276787",
+    "project_id": "fintech-assessment-app",
+    "storage_bucket": "fintech-assessment-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980057276787:android:d81a70efa47fdb483d4506",
+        "android_client_info": {
+          "package_name": "oladejo.mubarak.fintechappassessment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUPyRlaYKXq-ZyZ2libRKgQ72QZkm0A_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
